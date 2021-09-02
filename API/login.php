@@ -16,7 +16,7 @@
 
 		if($line = $result->fetch_assoc())
 		{
-			formatReturn($line['UserID'], $line['FirstName'], $line['LastName']);
+			formatReturn($line['FirstName'], $line['LastName'], $line['UserID']);
 		}
 		else
 		{
