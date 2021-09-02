@@ -30,7 +30,7 @@
 
 	function formatReturn($first, $last, $id)
 	{
-		$toReturn = '{"id":"' . $id . '","firstName":"' . $first . '","lastName":"' . $last . '"}';
+		$toReturn = '{"id":' . $id . ',"firstName":"' . $first . '","lastName":"' . $last . '"}';
 		sendResultInfoAsJson($toReturn);
 	}
 
@@ -47,7 +47,7 @@
 	
 	function returnWithError( $err )
 	{
-		$retValue = '{"error":"' . $err . '"}';
+		$retValue = '{"id":0,"error":"' . $err . '"}';
 		sendResultInfoAsJson( $retValue );
 	}
 
